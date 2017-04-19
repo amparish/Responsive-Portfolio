@@ -91,6 +91,11 @@ h3 {
   font-size: 22px;
 }
 
+a {
+	text-decoration: none;
+	color: #777;
+}
+
 /* header */
 
 #masthead {
@@ -279,16 +284,96 @@ input[type=submit] {
   border: 0 none;
 }
 
+/* media queries */
+
 @media only screen and (max-width: 980px) {
 	#logo {
-	margin-left: 20px;
+		margin-left: 100px;
+	}
+
+	nav {
+		margin-right: 100px;
+	}
+
+	.main-section {
+		max-width: 500px;
+		margin-left: 100px;
+	}
+
+	.sidebar {
+		max-width: 225px;
+		margin-right: 100px;
+	}
+
+	.social {
+		width: 51px;
+		height: 51px;
 	}
 }
 
-@media only screen (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+	#logo {
+		margin-left: 20px;
+	}
 
+	nav {
+		margin-right: 20px;
+	}
+
+	.main-section {
+		max-width: 715px;
+		margin-left: 20px;
+	}
+
+	.sidebar {
+		max-width: 715px;
+		margin-left: 20px;
+		margin-right: 33px;
+	}
+
+	.social {
+		width: 64px;
+		height: 64px;
+	}
+
+	.sidebar, h2, h3 {
+		font-size: 26px;
+	}
 }
 
-@media only screen (max-width: 640px) {
+@media only screen and (max-width: 640px) {
+	#logo {
+		margin-left: 0;
+		width: 100%;
+	}
 
+	nav {
+		float: left;
+		width: 99%;
+		text-align: center;
+	}
+
+	nav a {
+		width: 30%;
+	}
+
+	.main-section {
+		margin-top: 50px;
+		width: 94%;
+	}
+
+	.auth-image {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.sidebar {
+		width: 94%;
+		margin-bottom: 40px;
+		margin-right: 19px;
+	}
+
+	.work {
+		width: 100%;
+	}
 }
